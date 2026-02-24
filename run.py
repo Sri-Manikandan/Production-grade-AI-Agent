@@ -6,52 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 topics = [
-    "AI",
-    "Climate Change",
-    "Space",
-    "Crypto",
-    "Energy",
-    "ML",
-    "Quantum",
-    "Biotech",
-    "Security",
-    "EVs",
-    "VR",
-    "Blockchain",
-    "Robotics",
-    "5G",
-    "IoT",
-    "Drones",
-    "Nanotech",
-    "Health",
-    "Cities",
-    "AR",
-    "Cloud",
-    "Agriculture",
-    "Ocean",
-    "Wildlife",
-    "Fintech",
-    "Remote Work",
-    "EdTech",
-    "Food Tech",
-    "Wearables",
-    "3D Print",
-    "Satellites",
-    "Green Building",
-    "Water",
-    "Waste",
-    "Carbon",
-    "Nuclear",
-    "Hydrogen",
-    "Batteries",
-    "Semiconductors",
-    "Social Media",
-    "Gaming",
-    "Streaming",
-    "Digital Art",
-    "NFTs",
-    "Metaverse",
-    "Privacy",
+    "Openclaw Usecases",
+    "Openclaw Integration with Salesforce",
 ]
 
 async def send_request(client, i):
@@ -74,7 +30,7 @@ async def main():
         is_production=False,
     )
 
-    tasks = [send_request(client,i) for i in range(1,101)]
+    tasks = [send_request(client,i) for i in range(1,4)]
     await asyncio.gather(*tasks)
 
 if __name__ == "__main__":
